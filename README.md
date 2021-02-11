@@ -2,16 +2,16 @@
 
 Ders kapsamındaki bazı konular şunlardır:
 
-Sıfırdan Javascript'e Giriş
-Operatörler
-Koşullar
-Döngüler
-Hata Yönetimi
-Diziler
-Fonksiyonlar
-DOM ve BOM
-Nesneler
-Hazır Nesneler
-Fare ve Klavye Olayları
-AJAX
-JSON
+Sıfırdan Javascript'e Giriş<br>
+Operatörler<br>
+Koşullar<br>
+Döngüler<br>
+Hata Yönetimi<br>
+Diziler<br>
+Fonksiyonlar<br>
+DOM ve BOM<br>
+Nesneler<br>
+Hazır Nesneler<br>
+Fare ve Klavye Olayları<br>
+AJAX<br>
+JSON<br>
