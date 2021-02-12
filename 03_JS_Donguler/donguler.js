@@ -39,7 +39,28 @@
 
     
         // For Döngüsü
-        
-        
+
+    /*
+
+        var i;
+
+        for (i=3; i<=10; i++) {
+            document.write(i);
+
+        }
         
     
+        var i;
+
+        for (i=3; i<=10; i+=2) {
+            document.write(i);
+
+        }
+    
+        var i;
+
+        for (i=3; i<=10; i+=2) {
+            document.writeln(i + "<br>");
+
+        }
+    */
