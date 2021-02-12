@@ -2,8 +2,7 @@
 
 Ders kapsamındaki bazı konular şunlardır:
 
-Sıfırdan Javascript'e Giriş<br>
-Operatörler<br>
+Sıfırdan Javascript'e Giriş - Operatörler<br>
 Koşullar<br>
 Döngüler<br>
 Hata Yönetimi<br>
