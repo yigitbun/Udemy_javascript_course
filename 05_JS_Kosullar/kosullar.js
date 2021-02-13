@@ -14,11 +14,11 @@
             console.log("Sonuc yok")
         }
 
-        */
+*/
 
         
 
-        /*
+/*
         // Switch Case Kosulu
         
 
@@ -46,4 +46,4 @@
             break;
 
         }
-        */
+*/
