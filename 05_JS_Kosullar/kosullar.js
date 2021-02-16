@@ -21,8 +21,6 @@
 /*
         // Switch Case Kosulu
         
-
-
         var sayi = 103;
         switch (sayi) {
             case 100:
