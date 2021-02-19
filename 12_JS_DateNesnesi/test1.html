@@ -7,6 +7,39 @@
     <title>Document</title>
     <script>
         
+
+/* 
+        var tarih = new Date();
+        // document.write(tarih.getDate())
+        var gun = tarih.getDay();
+        document.write(tarih.getDay());
+
+        switch (gun) {
+            case 5:
+                document.write("Bugün günlerden: " + "Cuma")
+        }
+
+         var tarih = new Date();
+        document.write(tarih.getMonth())
+
+        document.write(tarih.getFullYear())
+  */       
+  
+        var tarih = new Date();
+
+        document.write(tarih.getDate() + "<br>");
+        tarih.setDate(11);
+        document.write(tarih.getDate());
+        tarih.setFullYear(1923);
+        document.write(tarih.getFullYear() + "<br>");
+
+        tarih.setHours(16);
+        document.write(tarih.getHours());
+
+        
+
+       
+        
     </script>
 </head>
 <body>
