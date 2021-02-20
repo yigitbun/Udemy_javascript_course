@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <p>Udemy Kurslari</p>
+    <p>Emrah Cengo</p>
+    <p>Php Kursu</p>
+
+    <ul>
+        <li>Php</li>
+        <li>Bootstrap</li>
+        <li>JQuery</li>
+        <li>JavaScript</li>
+    </ul>
+    <br><br>
+
+    <button onclick="say()"> Elemanlari Say </button>
+    
+    
+    <script>
+        // console.log(document.getElementsByTagName("p")[2]);
+        console.log(document.getElementsByTagName("p"));
+/* 
+        var e = document.getElementsByTagName("p");
+            
+            alert(e.length)
+ */
+        function say(){
+
+            alert(document.getElementsByTagName("li").length + " eleman bulunmaktadir")
+
+        }
+        
+        
+    </script>
+</body>
+</html>
