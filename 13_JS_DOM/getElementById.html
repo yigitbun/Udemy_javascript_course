@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #emrah {
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <p id="udemy">Udemy Kurslari</p>
+    <input id="adgir" type="text" placeholder="Adinizi giriniz" id="">
+    <br><br>
+    <input type="checkbox" id="sec"> Secim yap
+    <br><br>
+
+    <button id="islem" onclick="renklendir()">Id Degistir</button>
+    <button id="secimYap" onclick="secimYap()">Isaretle</button>
+    
+    
+    
+    
+    <script>
+        
+
+        function renklendir() {
+            document.getElementById("udemy").id = "emrah";
+            document.getElementById("adgir").placeholder = "Soyadinizi giriniz"
+        }
+        function secimYap(){
+            document.getElementById("sec").checked = true;
+        }
+    </script>
+</body>
+</html>
