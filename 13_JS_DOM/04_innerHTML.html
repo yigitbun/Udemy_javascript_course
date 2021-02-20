@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #emrah {
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <p id="udemy">Udemy Kurs egitmeni Emrah cengo</p>
+
+    <p id="ad">Emrah</p>
+    <p id="soyad">Cengo</p>
+   
+    
+    <script>
+        
+        var e = document.getElementById("udemy").innerHTML;
+        console.log(e);
+
+        var ad = document.getElementById("ad").innerHTML;
+        var soyad = document.getElementById("soyad").innerHTML;
+
+        document.write(ad + ' ' + soyad);
+
+        // icerik degistirme
+
+        document.getElementById("udemy").innerHTML="Ben degistim"
+        
+    </script>
+</body>
+</html>
