@@ -20,6 +20,7 @@
 
     <button onclick="islem()">Sil</button>
     <button onclick="ekle()">Ekle</button>
+    <button onclick="degis()">degis</button>
     <script>
       
       function islem() {
@@ -33,6 +34,12 @@
 
         e.appendChild(x);
         document.getElementById("udemy").appendChild(e)
+    }
+    function degis() {
+        var t = document.createTextNode("Emrah");
+        var ekles = document.getElementById("udemy").childNodes[1];
+        ekles.replaceChild(t, ekles.childNodes[0])
+
     }
     </script>
 </body>
