@@ -21,7 +21,12 @@
             var x = event.clientX;
             var y = event.clientY;
             document.getElementById("sonuc").innerHTML="X koordinati: " + x + "Y koordinati: " + y;
+            if (x > 174 && x < 190 && 170 < y && y < 190) {
+                document.getElementById("sonuc").innerHTML="Kalp bulundu ";
+            } 
+            
         }
+        
 
     </script>
 </body>
