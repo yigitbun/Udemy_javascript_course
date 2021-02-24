@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+
+</head>
+<body>
+
+	
+	<input id="sec" required=""  onsearch="islem()"  type="search" >
+
+	
+	<div id="sonuc"></div>
+
+
+	<script type="text/javascript">
+
+			function islem(){
+
+				var x=document.getElementById("sec");
+
+				document.getElementById("sonuc").innerHTML="Aranan Kelime :"+x.value;
+			}
+		
+	</script>
+</body>
+</html>

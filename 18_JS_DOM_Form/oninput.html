@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+
+</head>
+<body>
+
+	
+	<input id="sec"  oninput="islem()" type="text" placeholder="Bir tuşa basın" name="">
+	<div id="sonuc"></div>
+	
+
+
+	<script type="text/javascript">
+
+		function islem(){
+
+			var x=document.getElementById("sec").value;
+
+			document.getElementById("sonuc").innerHTML="Yazdıklarınız :"+x;
+
+
+
+		}
+
+
+		
+	</script>
+</body>
+</html>

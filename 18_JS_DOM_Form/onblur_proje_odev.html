@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+
+</head>
+<body>
+
+	<input id="ad" onblur="adKontrol()" type="text" name="" placeholder="Adınız">
+
+	<input type="text" name="" placeholder="Soyadınız">
+	<br><br>
+	<div id="sonuc"></div>
+	
+
+	<script type="text/javascript">
+
+		/*Proje Ödevi
+		Girdiğim karakter sayısı 6 dan ufaksa
+		alt tarafa adınız altı karakterden az olamaz
+		*/
+
+
+		function adKontrol(){
+
+		var e=document.getElementById("ad").value;
+		var say=e.length;
+
+		if (say<6) {
+
+			document.getElementById("sonuc").innerHTML="Adınız en az 6 karakter olmalı şuan "+say+" karakter";
+		}
+			
+
+
+		}
+	</script>
+</body>
+</html>
