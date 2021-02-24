@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    
+
+    <input type="text" name="" id="sayi1">+
+    <input type="text" name="" id="sayi2">
+    <button onclick="islem()">Topla ve yeni pencere ac</button>
+
+    <button onclick="kapat()">Kapatiniz</button>
+    <br><br>
+
+    <div id="sonuc"></div>
+    <script>
+
+        var yeniPencere;
+        
+        function islem(){
+            var sayi1=document.getElementById("sayi1").value;
+            var sayi2=document.getElementById("sayi2").value;
+            var topla = parseInt(sayi1) + parseInt(sayi2)
+            yeniPencere = window.open("","ikinciPencere", "width=250, height=100");
+            yeniPencere.document.write("<h1>Toplama sonucu: : " + topla +"</h1>")
+        }
+
+        function kapat(){
+            
+
+            if (yeniPencere){
+                yeniPencere.close();
+                document.getElementById("sonuc").innerHTML="Pencere kapatildi";
+            } else {
+                document.getElementById("sonuc").innerHTML="Kaptan kadar kafana";
+            }
+        }
+
+
+    </script>
+</body>
+</html>
