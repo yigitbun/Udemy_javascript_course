@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+	<style type="text/css">
+
+	
+</style>
+</head>
+<body >
+
+	
+	<h2>HttpRequest Nesnesi</h2>
+
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+
+		/*
+
+		Proje Ödevi
+
+		Form Alanı Oluşturacaksınız
+
+		1 inputa 100 lük sistemde not girin
+		ajax la sayfa yenilenmeden başka bir sayfada işlem yaptırarak sonucunu çekin
+
+		veri.php => burda 50 => 
+		0 44 => Başarısız,
+		45-54 => Geçer,
+		55-69 => Ortalama,
+		70-84 => İyi,
+		85-100 => Süpper
+
+		
+		*/
+
+		var xhttp=new XMLHttpRequest();
+
+		console.log(xhttp);
+
+		xhttp.open("POST","veri.php",true)
+		xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhttp.send("ad=Emrah&soyad=yuksel");
+
+		xhttp.onreadystatechange=function(){
+
+
+			if (this.readyState==4 && this.status==200) {
+
+				document.getElementById("sonuc").innerHTML=this.responseText;
+
+			} else {
+
+				document.getElementById("sonuc").innerHTML=this.statusText;
+
+			}
+
+
+
+
+		}
+
+	</script>
+</body>
+</html>
