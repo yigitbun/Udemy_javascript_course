@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button onclick="olustur()">Session Olustur</button>
+    <button onclick="yaz()">Session Oku ve Yaz</button>
+
+    <button onclick="sil()">Session Sil</button>
+
+    <button onclick="hepsiniSil()">Bütün session sil</button>
+
+    <div id="sonuc"></div>
+
+
+    <script>
+        function olustur(){
+
+            sessionStorage.setItem("ad","emrah");
+            sessionStorage.setItem("soyad","cengo");
+        }
+        function yaz(){
+            document.getElementById("sonuc").innerHTML=sessionStorage.getItem("ad") + " " + sessionStorage.getItem("soyad");
+        }
+
+        function sil(){
+            sessionStorage.removeItem("ad");
+            document.getElementById("sonuc").innerHTML=""
+
+        }
+        function hepsiniSil(){
+            sessionStorage.clear();
+        }
+
+
+        
+    </script>
+</body>
+</html>

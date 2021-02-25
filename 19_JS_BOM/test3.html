@@ -11,14 +11,20 @@
 </head>
 <body>
     
-
+    <button onclick="islem()">Göster</button>
+    <div id="sonuc"></div>
 
 
     <script>
         
+        function islem(){
+            var w=window.innerWidth;
+            var h=window.innerHeight;
+
+            document.getElementById("sonuc").innerHTML="Width: "+ w + " Height: " + h
+        }
 
 
-        
     </script>
 </body>
 </html>

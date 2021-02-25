@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+	<style type="text/css">
+		
+	
+	</style>
+</head>
+<body >
+
+	
+	<button onclick="olustur()">Session Oluştur</button>
+
+	<button onclick="yaz()">Session Oku ve Yaz</button>
+
+	<button onclick="sil()">Session Sil</button>
+
+	<button onclick="hepsiniSil()">Bütün Session Sil</button>
+
+	<div id="sonuc"></div>
+	
+
+
+	<script type="text/javascript">
+
+		//Proje Ödevi promp ile kullanıcıdan giriş aldığınız 5 sayıyı session kullanarak toplatın 5 sayı girildiğinde ekrana tamamlandı toplam şu yazsın
+
+
+			function olustur(){
+
+				sessionStorage.setItem("ad","emrah");
+
+				sessionStorage.setItem("soyad","yüksel");
+			}
+
+			function yaz(){
+
+				document.getElementById("sonuc").innerHTML=sessionStorage.getItem("ad")+" "+sessionStorage.getItem("soyad")
+			}
+
+			function sil(){
+
+				sessionStorage.removeItem("ad");
+
+				document.getElementById("sonuc").innerHTML="";
+			}
+
+			function hepsiniSil(){
+
+				sessionStorage.clear();
+			}
+
+		
+
+	</script>
+</body>
+</html>
